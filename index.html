@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./img/icon.svg">
+    <title>myhome</title>
+</head>
+
+<body>
+    <h1>ბინები</h1>
+
+    <form action="https://www.myhome.ge/s">
+
+        <label for="sell">გარიგების ტიპი:</label> <br>
+
+        <input type="radio" id="sell" value="1" name="deal_types">
+        <label for="sell">იყიდება</label> <br>
+
+        <input type="radio" id="rent" value="2" name="deal_types">
+        <label for="rent">ქირავდება</label> <br>
+
+        <input type="radio" id="Collateral" value="3" name="deal_types">
+        <label for="Collateral">გირავდება</label> <br> <br>
+
+        <label for="float">უძრავი ქონების ტიპი:</label> <br>
+
+        <input type="radio" id="float" value="1" name="real_estate_types">
+        <label for="float">ბინები</label> <br>
+
+        <input type="radio" id="house" value="2" name="real_estate_types">
+        <label for="house">სახლები</label> <br>
+
+        <input type="radio" id="landPlots" value="4" name="real_estate_types">
+        <label for="landPlots">მიწის ნააკვეთები</label> <br> <br>
+
+        <label for="gel">ვალუტა:</label> <br>
+
+        <input type="radio" id="gel" value="1" name="currency_id">
+        <label for="gel">ლარი</label> <br>
+
+        <input type="radio" id="dollar" value="2" name="currency_id">
+        <label for="dollar">დოლარი</label> <br> <br>
+
+        <label for="price">ფასი (მინიმალური და მაქსიმალური):</label> <br>
+        
+        <input type="number" id="price" placeholder="მინ. ფას" name="price_from">
+        <input type="number" placeholder="მაქს. ფას" name="price_to"> <br> <br>
+
+        <label for="area">ფართი (კვ.მ.)</label> <br>
+
+        <input type="number" id="area" placeholder="მინ." name="area_from">
+        <input type="number" placeholder="მაქს." name="area_to"> <br> <br>
+
+        <label for="rooms">ოთახების რაოდენობა:</label> <br>
+
+        <select id="rooms" name="room_types">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="7">6</option>
+            <option value="8">7</option>
+            <option value="9">8</option>
+            <option value="10">9</option>
+            <option value="11">10+</option>
+
+        </select>
+        <br> <br>
+
+        <label for="newBulding">ქონების სტატუსი:</label> <br>
+
+        <input type="checkbox" id="newBulding" value="2" name="statuses">
+        <label for="newBulding">ახალი აშენებული</label> <br>
+
+        <input type="checkbox" id="oldBulding" value="1" name="statuses">
+        <label for="oldBulding">ძველი აშენებული</label> <br>
+
+        <input type="checkbox" id="underConstruction" value="3" name="statuses">
+        <label for="underConstruction">მშენებარე</label>
+
+
+        <br> <br>
+        <input type="submit" value="ძებნა">
+    </form>
+
+</body>
+
+</html>
